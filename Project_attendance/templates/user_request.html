@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title%}Missed Attendance Request{%endblock%}
+
+<!--this for css styling-->
+{% block extra_style %}
+<style>
+</style>
+{% endblock %}
+
+<!--this for main content-->
+{%block content%}
+<!--<h1>User Request for Missed Attendance</h1>-->
+<form style="border:1px solid #d81a1a;margin-left:120px; width:30%; margin-top:60px;">
+  
+    <h2>User Request for Missed Attendance</h2>
+
+<div style="margin-left:20%;">
+    <div>
+        <label>Employee ID</label>
+         <br>
+        <input style="width:80%;" type="text" placeholder="Enter a Employee ID" required></input>
+    </div>
+
+    <div>
+        <br>
+        <label>Date</label>
+        <br>
+        <input type="date" style="width:80%;"></input>
+    </div>
+        <br>
+        <br>
+    
+<!--<button style="font-size:16px">submit</button>-->
+<button type="submit" style="margin-bottom:20px;">Submit Request</button>
+
+
+</div>
+</form>
+{%endblock%}
